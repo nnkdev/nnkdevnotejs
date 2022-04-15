@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.orangetheoryfitness.orangetheory",
+    "sha256_cert_fingerprints":
+    ["8B:38:E8:8B:B3:E5:5C:74:29:3A:36:B4:28:6E:E4:16:1C:60:4E:01:54:6D:17:17:76:0E:60:A9:45:9A:B4:3B"]
+  }
+}]
