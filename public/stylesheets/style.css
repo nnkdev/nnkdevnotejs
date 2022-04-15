@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.fp-header {
+  background-color: unset;
+}
+.fp-header .fp-title {
+  padding: 10px 40px;
+}
+.fp-user-state {
+  margin-bottom: 100px;
+  text-align: right;
+}
+.fp-user-state .dropdown {
+  padding: 10px;
+}
+
+.sign-up {
+  padding: 20px;
+}

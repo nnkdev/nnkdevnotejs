@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  table.table
+    thead
+      tr
+        th(scope='col') #
+        th(scope='col') Full Name
+        th(scope='col') Email
+        th(scope='col') Phone Number
+    tbody
+      each user in users
+        tr
+          th(scope='row') #{user.id}
+          td #{user.fullName}
+          td #{user.email}
+          td #{user.phoneNumber}
+

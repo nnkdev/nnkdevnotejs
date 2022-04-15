@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/javascripts/jquery-3.6.0.min.js")
+    script(src="/javascripts/bootstrap.bundle.js")
+    script(src="/javascripts/globalScript.js")
+  body(class='container')
+    header.fp-header
+      .row
+        .col-8.fp-title
+          h1 Express
+          p Welcome to Express
+        .col-4.fp-user-state
+          .dropdown
+            button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+              | Admin
+            ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
+              li
+                a.dropdown-item(href='#') Action
+              li
+                a.dropdown-item(href='#') Another action
+              li
+                a.dropdown-item(href='#') Something else here
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container-fluid
+        a.navbar-brand(href='#') Trang Chủ
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Tổng quan
+            li.nav-item
+              a.nav-link(href='#') Tài sản
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Đẩu tư
+              ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                li
+                  a.dropdown-item(href='#') Cố định
+                li
+                  a.dropdown-item(href='#') Không xác định
+                li
+                  hr.dropdown-divider
+                li
+                  a.dropdown-item(href='#') Dự tính
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Đang phát triển
+          form.d-flex
+            input.form-control.me-2(type='search' placeholder='Tìm kiếm' aria-label='Search')
+            button.btn.btn-outline-success(type='submit') Search
+    div(class='container row')
+      block content
+    div(class='row')
